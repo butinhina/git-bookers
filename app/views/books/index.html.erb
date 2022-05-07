@@ -1,9 +1,8 @@
-<main>
-  <% if flash[:notice] %>
+<% if flash[:notice] %>
     <div class="flash">
       <%= flash[:notice] %>
     </div>
-  <% end %>
+<% end %>
     <div id="main-title">
     <h1>Books</h1>
     </div>
@@ -31,12 +30,12 @@
      <h2>NEW book</h2>
     </div>
 
-    <%= form_with model:@book,local:true,class: "main-item" do |f| %>
+    <%= form_with model: @book, url: '/books', method: :post do |f| %>
       <% if @book.errors.any? %>
-        <h2 class="main-error"><%= @book.errors.count %>個のerrorsがあります<br></h2>
-          <% @book.errors.full_messages.each do |msg| %>
+        <h2 class="main-error"><%= @book.errors.count %>個のerrorsがあります<br></h2
+         <% @book.errors.full_messages.each do |msg| %>
             <li class="main-error2"><%= msg %><br/></li>
-          <% end %>
+         <% end %>
     <% end %>
 
     <div class="main-list">
@@ -53,4 +52,3 @@
       <%=f.submit 'Create Book' %>
       <% end %>
     </div>
-</main>

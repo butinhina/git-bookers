@@ -1,3 +1,4 @@
+
 <div id="show-title">
  <%= flash[:notice] %>
   <h2>Title</h2>
@@ -5,7 +6,7 @@
 
   <h2>Body</h2>
   <P><%= @book.body %></P>
-</div>  
+</div>
 <div class="show-list">
   <%= link_to "Edit", edit_book_path(@book.id) %>
   <%= link_to "Back",'/books' %>
