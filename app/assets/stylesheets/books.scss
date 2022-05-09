@@ -1,4 +1,18 @@
-td {
+body{
+    width:914px;
+}
+
+table{
+    height: 224px;
+}
+thead{
+    height: 24px;
+}
+tbody{
+    height: 194px;
+}
+
+td{
     padding-bottom: 7px;
     padding-left: 5px;
     padding-right: 5px;
@@ -24,6 +38,7 @@ td {
 
 #error_explanation{
     width: 450px;
+    height: 123px;
     border: 2px solid red;
     padding: 7px;
     padding-bottom: 0;
@@ -42,28 +57,35 @@ td {
     color: #fff;
 }
 
-ul {
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
+
+p, ol, ul, td {
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    margin: 33px;
 }
 
-#error_explanation ul li {
-    font-size: 12px;
-    list-style: square;
-}
+
 
 li {
     display: list-item;
     text-align: -webkit-match-parent;
 }
 
-.main-list_with_errors {
-    padding: 2px;
-    background-color: red;
-    display: table;
+
+
+#edit-title{
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+}
+
+input{
+    corsor: text;
+}
+
+textarea{
+    corsor: text;
 }
