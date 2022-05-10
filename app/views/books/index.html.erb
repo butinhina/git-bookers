@@ -40,24 +40,20 @@
          <% end %>
          </ul>
         </div>
-    <% end %>
+      <% end %>
 
 
-    <div class="main-list">
-      <div class="main-list_with_errors">
-       <lavel for="book_title">Title</lavel>
-      </div>
-       <input class="book_title" type="text" name="book[title]" id="book_title">
 
+    <div id="main-list">
+       <label for="book_title">Title</label>
+      <%=f.text_field :title %>
     </div>
-
-    <div class="main-list">
-       <lavel for="book_body">Body</lavel>
-       <textarea class="book_body" name="book[body]" id="book_body"></textarea>
+    <div id="main-list">
+       <label for="book_body">Body</label>
+       <%= f.text_area :body %>
     </div>
 
     <div class="actions">
       <%=f.submit 'Create Book' %>
-      <% end %>
-
     </div>
+    <% end %>
